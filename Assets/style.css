@@ -1,0 +1,135 @@
+body,
+html {
+    padding: 75px;
+    margin: 0;
+    font-family: source sans pro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-card-light {
+    background-color: #FFFFFF;
+    width: 601px;
+    height: 228px;
+    border-radius: 10px;
+
+}
+
+.card-head-light {
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+
+.img-profil img {
+    width: 50px;
+    height: 50px;
+}
+
+.img-logo .img {
+    width: 50px;
+    height: 50px;
+}
+
+.card-text {
+    margin-top: -25px;
+    padding-left: 25px;
+    padding-right: 290px;
+}
+
+.card-text #name-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 12px;
+    margin-bottom: -13px;
+}
+
+.card-text #name-sosmed {
+    font-size: 16px;
+    font-weight: bold;
+    color: gray;
+}
+
+.card-body {
+    width: 500px;
+    margin-left: 50px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: start;
+    margin-left: 50px;
+}
+
+.card-footer img {
+    padding-top: 10px;
+    padding-right: 12px;
+    width: 24px;
+    height: 24px
+}
+.card-footer p {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    padding-right: 45px;
+}
+
+.toggle {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #ffcc33, #ff9966);
+    position: relative;
+    cursor: pointer;
+    margin: 20px auto;
+    transition: background 0.3s;
+}
+
+.toggle-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+}
+
+body.dark-theme .toggle {
+    background: linear-gradient(45deg, #5555ff, #000066);
+}
+
+body.dark-theme .toggle-circle {
+    left: 32px;
+}
+
+/* Light Theme */
+body.light-theme {
+    background-color: #ECF8FF;
+    color: #000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #141D26;
+    color: #fff;
+}
+
+body.dark-theme .container-card-light {
+    background-color: #243447;
+}
+
+body.light-theme #theme-dark {
+    display: none; 
+  }
+  
+  body.dark-theme #theme-light {
+    display: none; 
+  }
+
+body.dark-theme .container-card-light .card-footer p {
+    color: white;
+}
